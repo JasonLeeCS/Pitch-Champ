@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,6 +11,8 @@
         android:id="@+id/Title"
         android:layout_width="210dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="156dp"
         android:ems="10"
         android:inputType="text"
         android:text="Songs"
@@ -20,23 +21,21 @@
         android:textSize="24sp"
         app:flow_horizontalAlign="center"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="23dp"
-        android:layout_marginTop="156dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <RelativeLayout
         android:id="@+id/roundedBox"
         android:layout_width="365dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/pink_border_filled"
         android:clickable="true"
         android:focusable="true"
         android:foreground="?android:attr/selectableItemBackgroundBorderless"
         android:padding="8dp"
-        app:layout_constraintTop_toBottomOf="@id/Title"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="23dp">
+        app:layout_constraintTop_toBottomOf="@id/Title">
 
         <!-- Image View for the song picture -->
 
@@ -78,5 +77,24 @@
             android:textSize="16sp" />
 
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mp3UploadArea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/pink_border_filled"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Upload Song\nMP3, OGG, Etc.\n +"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/roundedBox" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
