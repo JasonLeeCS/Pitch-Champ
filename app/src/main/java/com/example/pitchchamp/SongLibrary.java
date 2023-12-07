@@ -23,12 +23,12 @@ public class SongLibrary extends AppCompatActivity {
         songList = generateSampleSongs();
 
         // Find the RecyclerView by its ID
-        RecyclerView recyclerView = findViewById(R.id.recyclerViewSongs);
-
-        // Set up the RecyclerView with a LinearLayoutManager and an adapter
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        SongAdapter songAdapter = new SongAdapter(songList);
-        recyclerView.setAdapter(songAdapter);
+//        RecyclerView recyclerView = findViewById(R.id.recyclerViewSongs);
+//
+//        // Set up the RecyclerView with a LinearLayoutManager and an adapter
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+//        SongAdapter songAdapter = new SongAdapter(songList);
+//        recyclerView.setAdapter(songAdapter);
     }
 
     // Generate sample songs (replace this with your data retrieval logic)
