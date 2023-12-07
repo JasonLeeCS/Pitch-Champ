@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- recording_item.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/pink_border_filled">
+
+    <!-- Song Title -->
+    <TextView
+        android:id="@+id/textSongTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Song Title"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Date Recorded -->
+    <TextView
+        android:id="@+id/textDateRecorded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Recorded: 01/01/2023"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <!-- Length of Recording -->
+    <TextView
+        android:id="@+id/textRecordingLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Length: 3:45"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

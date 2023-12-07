@@ -1,0 +1,15 @@
+<!-- res/drawable/pink_border.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FC5185" /> <!-- Set the fill color for the border -->
+            <corners android:radius="20dp" /> <!-- Set the corner radius for the border -->
+        </shape>
+    </item>
+    <item android:left="4dp" android:right="4dp" android:top="4dp" android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#3F3D56" /> <!-- Set the fill color for the inner box -->
+            <corners android:radius="16dp" /> <!-- Set the corner radius for the inner box -->
+        </shape>
+    </item>
+</layer-list>
