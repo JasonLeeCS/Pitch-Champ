@@ -1,4 +1,4 @@
-package com.cs407.pitchchmpscreensjl;
+package com.example.pitchchamp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
