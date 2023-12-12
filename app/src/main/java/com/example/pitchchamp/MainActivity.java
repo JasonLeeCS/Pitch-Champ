@@ -3,7 +3,12 @@ package com.example.pitchchamp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -62,8 +67,12 @@ public class MainActivity extends AppCompatActivity {
             int id = item.getItemId();
 
             if (id == R.id.nav_account) {
-                // Handle the account action
+                Intent intent = new Intent(MainActivity.this, RecordingPlayback.class);
+                startActivity(intent);
+
             } else if (id == R.id.nav_preferences) {
+
+
                 // Handle the preferences action
             } else if (id == R.id.nav_notifications) {
                 // Handle the notifications action

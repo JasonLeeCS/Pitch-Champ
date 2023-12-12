@@ -61,7 +61,7 @@
             android:layout_marginBottom="4dp"
             android:background="@drawable/pink_border"
             android:scaleType="centerCrop"
-            android:src="@drawable/Mary_Had_A_Little_Lamb_icon" />
+            android:src="@drawable/mary_had_a_little_lamb_icon" />
 
         <!-- Text View for the song title/author -->
         <TextView

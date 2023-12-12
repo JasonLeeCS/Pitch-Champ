@@ -1,9 +1,7 @@
 <resources>
     <string name="app_name">PitchChamp</string>
-<<<<<<< HEAD
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-=======
     <string name="title_activity_song_library">SongLibrary</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
@@ -95,5 +93,4 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
->>>>>>> 0f184f9f09cf4f0405e9682b19d07c449222f81b
 </resources>
