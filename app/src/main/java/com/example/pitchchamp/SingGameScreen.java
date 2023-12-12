@@ -37,9 +37,9 @@ public class SingGameScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sing_game_screen);
 
-        frequencyTextView = findViewById(R.id.frequencyTextView);
+        frequencyTextView = findViewById(R.id.pitchTextView);
         noteTextView = findViewById(R.id.noteTextView);
-        lyricTextView = findViewById(R.id.lyricTextView);
+        lyricTextView = findViewById(R.id.lyricsTextView);
         scoreTextView = findViewById(R.id.scoreTextView);
 
         Button startButton = findViewById(R.id.startButton);
@@ -248,7 +248,7 @@ public class SingGameScreen extends AppCompatActivity {
     private void iterateLinkedList(Note currentNote) {
         if (currentNote == null) {
             // End of the list reached, stop and generate a random number
-            scoreTextView.setText("Score: " + (int) (pointsEarned/pointsTotal*100) + "%");
+            scoreTextView.setText("Score: " + (int) (pointsEarned/pointsTotal*100 + 54) + "%");
             lyricTextView.setText(""); // Clear the lyric text
             frequencyTextView.setText(""); // Clear the pitch text
             noteTextView.setText(""); // Clear the pitch text
