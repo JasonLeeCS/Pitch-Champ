@@ -8,41 +8,67 @@
     tools:context=".RecordingPlayback">
 
     <!-- Record Button -->
+
+    <!-- Title of Recordings -->
+
+    <Button
+        android:id="@+id/btnRecord2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/pink_border_filled"
+        android:padding="16dp"
+        android:text="Stop Recording"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/recordingsTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnRecord"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/btnRecord"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:background="@drawable/pink_border_filled"
         android:padding="16dp"
         android:text="Record"
         android:textColor="@android:color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnRecord2"
+        app:layout_constraintEnd_toStartOf="@+id/btnRecord2"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <!-- Title of Recordings -->
+
     <TextView
         android:id="@+id/recordingsTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="29dp"
         android:text="Recordings"
         android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/recordingRecyclerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnRecord" />
+        app:layout_constraintTop_toBottomOf="@+id/btnRecord2" />
 
     <!-- List of Recordings -->
+    <!-- Layouts and other components before RecyclerView -->
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recordingRecyclerView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/btnRecord2"/>-->
+    <!-- Other components after RecyclerView -->
+
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewRecordings"
+        android:id="@+id/recordingRecyclerView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/pink_border_filled"
@@ -50,7 +76,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/recordingsTitle"
+        app:layout_constraintTop_toBottomOf="@+id/recordingsTitle"
         tools:listitem="@layout/recording_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
