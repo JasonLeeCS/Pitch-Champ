@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView userName;
     private TextView userEmail;
     private TextView userBio;
+    private TextView userPracticeGoal;
     private Chronometer chronometer;
     private DrawerLayout drawer;
 
@@ -42,14 +43,16 @@ public class MainActivity extends AppCompatActivity {
         userName = findViewById(R.id.user_name);
         userEmail = findViewById(R.id.user_email); // Make sure this ID exists
         userBio = findViewById(R.id.user_bio);     // Make sure this ID exists
+        userPracticeGoal = findViewById(R.id.user_bio);
 
         // Start the chronometer
         chronometer.start();
 
         // Set default values
         userName.setText("Richard Yang");
-        userEmail.setText("richard.yang@example.com");
-        userBio.setText("A brief bio of Richard Yang...");
+        userEmail.setText("ryang247@wisc.edu");
+        userBio.setText("Choir Bass");
+        userPracticeGoal.setText("Goal: 30 minutes");
 
         // Setup the DrawerLayout and NavigationView
         drawer = findViewById(R.id.drawer_layout); // Corrected the ID here
