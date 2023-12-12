@@ -67,19 +67,26 @@ public class MainActivity extends AppCompatActivity {
             int id = item.getItemId();
 
             if (id == R.id.nav_account) {
-                Intent intent = new Intent(MainActivity.this, RecordingPlayback.class);
-                startActivity(intent);
 
             } else if (id == R.id.nav_preferences) {
 
 
                 // Handle the preferences action
             } else if (id == R.id.nav_notifications) {
+
+
                 // Handle the notifications action
             } else if (id == R.id.nav_sign_out) {
                 // Handle the sign out action
+
+
+                Intent intent = new Intent(MainActivity.this, RecordingPlayback.class);
+                startActivity(intent);
+
             } else if (id == R.id.nav_help) {
                 // Handle the help action
+
+
             }
 
             drawer.closeDrawer(GravityCompat.START);
