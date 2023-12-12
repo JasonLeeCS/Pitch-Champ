@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Setup the DrawerLayout and NavigationView
         drawer = findViewById(R.id.drawer_layout); // Corrected the ID here
-        NavigationView navigationView = findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.view_navigation);
 
         // Setup the ActionBarDrawerToggle
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -85,7 +85,6 @@ public class MainActivity extends AppCompatActivity {
 
             } else if (id == R.id.nav_help) {
                 // Handle the help action
-
 
             }
 
