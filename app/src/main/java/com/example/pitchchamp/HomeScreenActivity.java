@@ -21,7 +21,6 @@ public class HomeScreenActivity extends AppCompatActivity {
         Button buttonKaraoke = findViewById(R.id.button_karaoke);
         Button buttonProfile = findViewById(R.id.button_profile);
 
-        // Set onClick listeners
         buttonPracticeGoal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
