@@ -40,14 +40,38 @@ public class HomeScreenActivity extends AppCompatActivity {
             }
         });
 
-        // Similarly, set onClickListeners for other buttons
-        // ...
+        buttonSongs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to SongsActivity
+                Intent intent = new Intent(HomeScreenActivity.this, SongLibrary.class);
+                startActivity(intent);
+            }
+        });
 
         buttonRecordings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Navigate to RecordingPlayback
                 Intent intent = new Intent(HomeScreenActivity.this, RecordingPlayback.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonKaraoke.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to SongsActivity
+                Intent intent = new Intent(HomeScreenActivity.this, SongLibrary.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to SongsActivity
+                Intent intent = new Intent(HomeScreenActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
