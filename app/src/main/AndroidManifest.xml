@@ -19,6 +19,9 @@
             android:name=".SongLibrary"
             android:exported="false" />
         <activity
+            android:name=".SongLessonLibrary"
+            android:exported="false" />
+        <activity
             android:name=".SingGameScreen"
             android:exported="false" />
         <activity

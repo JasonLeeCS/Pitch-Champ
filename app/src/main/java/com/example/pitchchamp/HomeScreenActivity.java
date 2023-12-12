@@ -35,7 +35,7 @@ public class HomeScreenActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to LessonsActivity
-                Intent intent = new Intent(HomeScreenActivity.this, SongLibrary.class);
+                Intent intent = new Intent(HomeScreenActivity.this, SongLessonLibrary.class);
                 startActivity(intent);
             }
         });
