@@ -75,6 +75,5 @@ public class HomeScreenActivity extends AppCompatActivity {
             }
         });
 
-        // Continue with other buttons...
     }
 }
