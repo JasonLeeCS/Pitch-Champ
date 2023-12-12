@@ -9,7 +9,7 @@
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
-    <!-- The main content view where your existing layout will be -->
+    <!-- The main content view -->
     <include
         layout="@layout/content_main" />
 
